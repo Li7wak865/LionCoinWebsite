@@ -10,60 +10,95 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         .header {
             background-color: #004d40;
             color: white;
             text-align: center;
-            padding: 1rem 0;
+            padding: 2rem 0;
         }
-        .banner {
-            width: 100%;
+        .header img {
+            width: 100px;
             height: auto;
+            margin-bottom: 1rem;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0.5rem 0;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin: 0;
         }
         .content {
             padding: 2rem;
             text-align: center;
         }
-        .icon {
-            width: 150px;
+        .banner {
+            width: 100%;
             height: auto;
+            margin-bottom: 2rem;
+        }
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
         }
         .btn {
             background-color: #004d40;
             color: white;
             padding: 1rem 2rem;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
             text-transform: uppercase;
+            font-size: 1rem;
+            transition: background-color 0.3s;
         }
         .btn:hover {
             background-color: #00332e;
         }
         .features {
             display: flex;
-            justify-content: space-around;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
             margin: 2rem 0;
         }
         .feature {
-            width: 30%;
-            background-color: #fff;
+            background-color: white;
             border: 1px solid #ddd;
             border-radius: 8px;
-            padding: 1rem;
+            padding: 2rem;
+            width: 30%;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
         }
         .feature h3 {
+            font-size: 1.5rem;
             margin-top: 0;
         }
         .feature p {
             color: #666;
+            font-size: 1rem;
+        }
+        @media (max-width: 768px) {
+            .feature {
+                width: 80%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="https://raw.githubusercontent.com/Li7wak865/LionCoinWebsite/main/icon.jpg" alt="LionCoin Icon" class="icon">
+        <img src="https://raw.githubusercontent.com/Li7wak865/LionCoinWebsite/main/icon.jpg" alt="LionCoin Icon">
         <h1>Welcome to LionCoin</h1>
         <p>Join the Pride and be part of our roaring success!</p>
     </div>
